@@ -1,0 +1,25 @@
+[project]
+name            = "network-manim"
+version         = "0.1.0"
+description     = "Network‑science animations built with Manim"
+readme          = "README.md"
+requires-python = ">=3.9"
+authors         = [
+  { name = "YOUR NAME", email = "you@example.com" }
+]
+license         = { text = "MIT" }
+dependencies    = [
+  "manim~=0.19",
+  "networkx>=3.0",
+  "typer[all]>=0.12"
+]
+
+[project.scripts]
+nmanim = "network_manim.cli:app"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
